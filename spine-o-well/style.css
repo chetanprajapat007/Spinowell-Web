@@ -1,0 +1,84 @@
+/*
+Theme Name: Spine-O-Well
+Theme URI: https://www.spineowell.com/
+Author: Jules
+Author URI: https://www.jules.ai/
+Description: A custom, modern, and premium WordPress theme for Spine-O-Well Orthopedic Mattresses. Designed to be clean, responsive, and eco-friendly, with a focus on user experience and creative animations.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-theme, responsive-layout, premium, modern, eco-friendly
+Text Domain: spineowell
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Variables
+	2.1 Colors
+	2.2 Typography
+3.0 Global
+	3.1 Typography
+	3.2 Layout
+4.0 Header
+5.0 Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+2.0 Variables
+--------------------------------------------------------------*/
+:root {
+	/* 2.1 Colors */
+	--color-primary-green: #5E8C6A;
+	--color-background-off-white: #F7F5F2;
+	--color-text-charcoal: #333333;
+	--color-white: #FFFFFF;
+	--color-accent-blue: #2574A9;
+	--color-accent-red: #E74C3C;
+
+	/* 2.2 Typography */
+	--font-primary: 'Poppins', sans-serif;
+	--font-secondary: 'Lato', sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+3.0 Global
+--------------------------------------------------------------*/
+
+/* 3.1 Typography */
+body {
+	font-family: var(--font-secondary);
+	color: var(--color-text-charcoal);
+	background-color: var(--color-background-off-white);
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-primary);
+	font-weight: 600;
+	color: var(--color-primary-green);
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+a {
+	color: var(--color-primary-green);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: var(--color-accent-blue);
+}
+
+/* 3.2 Layout */
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}

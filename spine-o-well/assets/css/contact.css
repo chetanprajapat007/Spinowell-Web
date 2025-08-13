@@ -1,0 +1,79 @@
+/*
+ * Styles for the Contact Us page.
+ */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contact-info h2, .contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: var(--color-primary-green);
+}
+
+/* Contact Form 7 Styling */
+.form-placeholder {
+    padding: 40px;
+    background-color: var(--color-background-off-white);
+    border: 2px dashed var(--color-primary-green);
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* These styles will apply once Contact Form 7 is installed */
+.wpcf7-form p {
+    margin-bottom: 20px;
+}
+
+.wpcf7-form-control {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+}
+
+.wpcf7-form-control:focus {
+    outline: 2px solid var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+
+textarea.wpcf7-form-control {
+    min-height: 150px;
+}
+
+.wpcf7-submit {
+    width: auto;
+    cursor: pointer;
+    background-color: var(--color-primary-green);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: var(--font-primary);
+	transition: background-color 0.3s ease;
+}
+
+.wpcf7-submit:hover {
+    background-color: var(--color-accent-blue);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
